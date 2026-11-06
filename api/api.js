@@ -4,7 +4,7 @@ import axios from "axios";
 
 const api = axios.create({ 
 
-  baseURL: "https://api-contatos-auth-04-09-25.onrender.com", 
+  baseURL: import.meta.env.VITE_API_URL || "https://api-contatos-auth-04-09-25.onrender.com", 
 
 }); 
 
